@@ -1,0 +1,28 @@
+---
+title : contact
+---
+
+<div id="banner">
+   <div class="container">
+     <div class="margin-top">
+       <div class='text-left'>
+         <h1>Join us!</h1>
+         <h3>For more infos</h3>
+       </div>
+     </div>
+   </div>
+ </div>
+
+<div class="container" id="contact">
+  <div class="row text-center">
+    <h2>Our team</h2>
+    <% data.team.each do |team| %>
+      <div class="col-xs-4">
+        <div id="img-reduce">
+           <%= image_tag team.picture, class: "img-circle" %>
+           <h2><%=team.name%></h2>
+           </div>
+       </div>
+     <%end%>
+   </div>
+ </div>
